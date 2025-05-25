@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心 - Kids Word Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- 顶部状态栏 -->
+    <div class="bg-white p-4 flex justify-between items-center">
+        <div class="text-xl font-bold text-blue-600">个人中心</div>
+        <div class="flex items-center space-x-4">
+            <i class="fas fa-cog text-gray-600"></i>
+        </div>
+    </div>
+
+    <!-- 用户信息 -->
+    <div class="p-4">
+        <div class="bg-white rounded-xl p-4 shadow-sm">
+            <div class="flex items-center space-x-4">
+                <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=100&h=100&fit=crop" 
+                     alt="Avatar" class="w-16 h-16 rounded-full object-cover">
+                <div>
+                    <h2 class="text-lg font-semibold">小明</h2>
+                    <p class="text-sm text-gray-500">学习等级：Lv.5</p>
+                </div>
+            </div>
+            <div class="mt-4 flex justify-between items-center">
+                <div class="text-center">
+                    <div class="text-xl font-bold text-blue-600">128</div>
+                    <div class="text-sm text-gray-500">已学单词</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-xl font-bold text-green-600">15</div>
+                    <div class="text-sm text-gray-500">连续学习</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-xl font-bold text-yellow-600">8</div>
+                    <div class="text-sm text-gray-500">获得勋章</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 学习统计 -->
+    <div class="px-4 mb-6">
+        <h2 class="text-lg font-semibold mb-3">学习统计</h2>
+        <div class="bg-white rounded-xl p-4 shadow-sm">
+            <div class="space-y-4">
+                <div>
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm text-gray-600">本周学习时长</span>
+                        <span class="text-sm font-medium">5小时20分钟</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-blue-500 rounded-full h-2" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm text-gray-600">单词掌握率</span>
+                        <span class="text-sm font-medium">85%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-green-500 rounded-full h-2" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 功能列表 -->
+    <div class="px-4 mb-20">
+        <div class="bg-white rounded-xl shadow-sm">
+            <div class="divide-y">
+                <a href="#" class="flex items-center justify-between p-4">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-medal text-yellow-500"></i>
+                        <span>我的勋章</span>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400"></i>
+                </a>
+                <a href="#" class="flex items-center justify-between p-4">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-chart-line text-blue-500"></i>
+                        <span>学习报告</span>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400"></i>
+                </a>
+                <a href="#" class="flex items-center justify-between p-4">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-star text-purple-500"></i>
+                        <span>收藏单词</span>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400"></i>
+                </a>
+                <a href="#" class="flex items-center justify-between p-4">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-bell text-red-500"></i>
+                        <span>学习提醒</span>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部导航栏 -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t flex justify-around items-center p-4">
+        <a href="home.html" class="text-center text-gray-400">
+            <i class="fas fa-home text-xl"></i>
+            <p class="text-xs mt-1">首页</p>
+        </a>
+        <a href="learn.html" class="text-center text-gray-400">
+            <i class="fas fa-book text-xl"></i>
+            <p class="text-xs mt-1">学习</p>
+        </a>
+        <a href="games.html" class="text-center text-gray-400">
+            <i class="fas fa-gamepad text-xl"></i>
+            <p class="text-xs mt-1">游戏</p>
+        </a>
+        <a href="profile.html" class="text-center text-blue-600">
+            <i class="fas fa-user text-xl"></i>
+            <p class="text-xs mt-1">我的</p>
+        </a>
+    </div>
+</body>
+</html> 

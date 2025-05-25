@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习 - Kids Word Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- 顶部状态栏 -->
+    <div class="bg-white p-4 flex justify-between items-center">
+        <div class="text-xl font-bold text-blue-600">学习</div>
+        <div class="flex items-center space-x-4">
+            <i class="fas fa-search text-gray-600"></i>
+        </div>
+    </div>
+
+    <!-- 学习模式选择 -->
+    <div class="p-4">
+        <div class="grid grid-cols-2 gap-4">
+            <div class="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl p-4 text-white">
+                <i class="fas fa-book-open text-2xl mb-2"></i>
+                <h3 class="font-semibold">单词学习</h3>
+                <p class="text-sm opacity-80">学习新单词</p>
+            </div>
+            <div class="bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl p-4 text-white">
+                <i class="fas fa-sync-alt text-2xl mb-2"></i>
+                <h3 class="font-semibold">复习</h3>
+                <p class="text-sm opacity-80">巩固已学单词</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 单词分类 -->
+    <div class="px-4">
+        <h2 class="text-lg font-semibold mb-3">单词分类</h2>
+        <div class="space-y-4">
+            <!-- 动物类 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=400&h=200&fit=crop" 
+                         alt="Animals" class="w-full h-32 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 text-white">
+                        <h3 class="font-semibold text-lg">动物类</h3>
+                        <p class="text-sm opacity-90">20个单词</p>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">初级</span>
+                            <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">热门</span>
+                        </div>
+                        <button class="text-blue-600 font-medium">开始学习</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 水果类 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=400&h=200&fit=crop" 
+                         alt="Fruits" class="w-full h-32 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 text-white">
+                        <h3 class="font-semibold text-lg">水果类</h3>
+                        <p class="text-sm opacity-90">15个单词</p>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">中级</span>
+                            <span class="text-xs bg-yellow-100 text-yellow-600 px-2 py-1 rounded">推荐</span>
+                        </div>
+                        <button class="text-blue-600 font-medium">开始学习</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 颜色类 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&h=200&fit=crop" 
+                         alt="Colors" class="w-full h-32 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 text-white">
+                        <h3 class="font-semibold text-lg">颜色类</h3>
+                        <p class="text-sm opacity-90">12个单词</p>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">初级</span>
+                        </div>
+                        <button class="text-blue-600 font-medium">开始学习</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部导航栏 -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t flex justify-around items-center p-4">
+        <a href="home.html" class="text-center text-gray-400">
+            <i class="fas fa-home text-xl"></i>
+            <p class="text-xs mt-1">首页</p>
+        </a>
+        <a href="learn.html" class="text-center text-blue-600">
+            <i class="fas fa-book text-xl"></i>
+            <p class="text-xs mt-1">学习</p>
+        </a>
+        <a href="games.html" class="text-center text-gray-400">
+            <i class="fas fa-gamepad text-xl"></i>
+            <p class="text-xs mt-1">游戏</p>
+        </a>
+        <a href="profile.html" class="text-center text-gray-400">
+            <i class="fas fa-user text-xl"></i>
+            <p class="text-xs mt-1">我的</p>
+        </a>
+    </div>
+</body>
+</html> 
