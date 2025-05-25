@@ -3,52 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kids Word Learning App</title>
+    <title>首页 - Kids Word Learning</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .iphone-frame {
-            width: 390px;
-            height: 844px;
-            background: #000;
-            border-radius: 55px;
-            padding: 12px;
-            position: relative;
-            margin: 20px auto;
-            box-shadow: 0 0 20px rgba(0,0,0,0.2);
-        }
-        .iphone-screen {
-            width: 100%;
-            height: 100%;
-            background: #fff;
-            border-radius: 45px;
-            overflow: hidden;
-            position: relative;
-        }
-        .dynamic-island {
-            position: absolute;
-            top: 12px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 126px;
-            height: 37px;
-            background: #000;
-            border-radius: 20px;
-            z-index: 1000;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
-    <div class="iphone-frame">
-        <div class="dynamic-island"></div>
-        <div class="iphone-screen">
-            <iframe src="pages/home.html" id="mainFrame"></iframe>
+<body class="bg-gray-50">
+    <!-- 顶部状态栏 -->
+    <div class="bg-white p-4 flex justify-between items-center">
+        <div class="text-xl font-bold text-blue-600">WordFun</div>
+        <div class="flex items-center space-x-4">
+            <i class="fas fa-bell text-gray-600"></i>
+            <i class="fas fa-user-circle text-gray-600 text-xl"></i>
         </div>
+    </div>
+
+    <!-- 学习进度 -->
+    <div class="p-4">
+        <div class="bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl p-4 text-white">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-lg font-semibold">今日学习进度</h2>
+                <span class="text-sm">20/30 单词</span>
+            </div>
+            <div class="w-full bg-white/20 rounded-full h-2">
+                <div class="bg-white rounded-full h-2" style="width: 66%"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 每日任务 -->
+    <div class="px-4 mb-6">
+        <h2 class="text-lg font-semibold mb-3">每日任务</h2>
+        <div class="grid grid-cols-2 gap-4">
+            <div class="bg-white rounded-xl p-4 shadow-sm">
+                <div class="flex items-center justify-between mb-2">
+                    <i class="fas fa-book text-blue-500"></i>
+                    <span class="text-sm text-green-500">已完成</span>
+                </div>
+                <h3 class="font-medium">学习新单词</h3>
+                <p class="text-sm text-gray-500">10个新单词</p>
+            </div>
+            <div class="bg-white rounded-xl p-4 shadow-sm">
+                <div class="flex items-center justify-between mb-2">
+                    <i class="fas fa-gamepad text-purple-500"></i>
+                    <span class="text-sm text-gray-500">进行中</span>
+                </div>
+                <h3 class="font-medium">单词游戏</h3>
+                <p class="text-sm text-gray-500">完成3个游戏</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 推荐学习 -->
+    <div class="px-4">
+        <h2 class="text-lg font-semibold mb-3">推荐学习</h2>
+        <div class="space-y-4">
+            <div class="bg-white rounded-xl p-4 shadow-sm">
+                <div class="flex items-center space-x-4">
+                    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=100&h=100&fit=crop" 
+                         alt="Animals" class="w-16 h-16 rounded-lg object-cover">
+                    <div>
+                        <h3 class="font-medium">动物单词</h3>
+                        <p class="text-sm text-gray-500">20个常用动物单词</p>
+                        <div class="mt-2">
+                            <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">初级</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl p-4 shadow-sm">
+                <div class="flex items-center space-x-4">
+                    <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=100&h=100&fit=crop" 
+                         alt="Fruits" class="w-16 h-16 rounded-lg object-cover">
+                    <div>
+                        <h3 class="font-medium">水果单词</h3>
+                        <p class="text-sm text-gray-500">15个常见水果单词</p>
+                        <div class="mt-2">
+                            <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">中级</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部导航栏 -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t flex justify-around items-center p-4">
+        <a href="index.html" class="text-center text-blue-600">
+            <i class="fas fa-home text-xl"></i>
+            <p class="text-xs mt-1">首页</p>
+        </a>
+        <a href="learn.html" class="text-center text-gray-400">
+            <i class="fas fa-book text-xl"></i>
+            <p class="text-xs mt-1">学习</p>
+        </a>
+        <a href="games.html" class="text-center text-gray-400">
+            <i class="fas fa-gamepad text-xl"></i>
+            <p class="text-xs mt-1">游戏</p>
+        </a>
+        <a href="profile.html" class="text-center text-gray-400">
+            <i class="fas fa-user text-xl"></i>
+            <p class="text-xs mt-1">我的</p>
+        </a>
     </div>
 </body>
 </html> 
